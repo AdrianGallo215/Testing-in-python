@@ -1,6 +1,6 @@
-from src.data_structures.linked_list import LinkedList
-from src.models.task import Task, TaskList
-from src.services.notifier import Notifier
+from data_structures.linked_list import LinkedList
+from models.task import Task, TaskList
+from services.notifier import Notifier
 
 class User():
 

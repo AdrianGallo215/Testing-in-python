@@ -1,5 +1,5 @@
-from src.models.user import User
-from src.services.notifier import Notifier
+from models.user import User
+from services.notifier import Notifier
 
 class UserController:
 

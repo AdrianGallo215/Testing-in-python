@@ -1,6 +1,6 @@
-from src.models.task import Task, TaskList
-from src.models.user import User
-from src.services.notifier import Notifier
+from models.task import Task, TaskList
+from models.user import User
+from services.notifier import Notifier
 
 class TaskController:
 
@@ -9,7 +9,7 @@ class TaskController:
         self.notifier = Notifier()
 
     def create_task(self, title, description=None, priority = "baja", tag="general"):
-        newTask = Task(self.taskList.taskCount+1, title, description, "pendiente", priority, tag)
+        newTask = Task(self.taskList.taskCount()+1, title, description, "pendiente", priority, tag)
         self.taskList.addTask(newTask)
         return newTask
     

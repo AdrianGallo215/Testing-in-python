@@ -1,8 +1,8 @@
-from src.data_structures.node import Node
-from src.data_structures.linked_list import LinkedList
-from src.services.notifier import Notifier
-from src.services.fake_database import FakeDataBase 
-from src.services.tag_manager import load_tags, add_tag
+from data_structures.node import Node
+from data_structures.linked_list import LinkedList
+from services.notifier import Notifier
+from services.fake_database import FakeDataBase 
+from services.tag_manager import load_tags, add_tag
 
 class Task:
 
@@ -58,6 +58,7 @@ class Task:
                 f"{'-'*15}")
     
 class TaskList(LinkedList):
+
 
     def __init__(self, database = None):
         super().__init__()

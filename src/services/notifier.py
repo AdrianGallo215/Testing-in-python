@@ -1,4 +1,4 @@
-import requests
+
 
 class Notifier:
     def __init__(self):
